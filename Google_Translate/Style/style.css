@@ -369,6 +369,7 @@ nav {
     color: blue;
     word-wrap: unset;
     flex-wrap: nowrap;
+    width: 10rem;
 }
 
 #Input_Lang_Box1_Bottom {
