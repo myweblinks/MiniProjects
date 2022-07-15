@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Notes App</title>
+</head>
+<body>
+    <nav>
+        <h1>Note+</h1>
+        <button><span></span><span></span><span></span></button>
+    </nav>
+
+    <!-- User Inputs in this section  -->
+    <div id="UI">
+        <input  class="UIEle" placeholder="Add Name" type="text" id="AddName">
+        <textarea class="UIEle" id="AddContent" cols="30" rows="30" placeholder="Add Content"></textarea>
+        <button class="UIEle" onclick="ClcSub()" type="submit">Add</button>
+        <button class="UIEle" onclick="DelActive(this)" type="submit">Delete Note</button>
+    </div>
+
+    <!-- Saved Notes Here -->
+    <div id="Saved">
+    </div>
+</body>
+<script src="Script/script.js"></script>
+</html>
