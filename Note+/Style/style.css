@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 12;
+    font: caption;    
+
+}
+
+body{
+    background-color: rgb(196, 237, 115);
+}
+nav{
+    background-color: rgb(93, 220, 192);
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.1rem;
+    margin: 0;
+}
+nav>h1{
+    color: rgb(255, 230, 0);
+    font: caption;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 1rem;
+}
+nav>button{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2rem;
+    margin-right: 0.3rem;
+    flex-direction: column;
+}
+nav>button>span{
+    background-color: rgb(222, 152, 152);
+    width: 90%;
+    height: 4px;
+    margin: 2px;
+}
+#UI{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    height: auto;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 7px;
+}
+
+.UIEle{
+    background-color: rgb(255, 228, 146);
+    border: none;
+    outline: none;
+    margin: 0.6rem auto;    
+    width: 90%;
+    height: 2rem;
+    border-radius: 6px;
+    padding-left: 0.4em;
+}
+#UI>textarea{
+    height: 10rem;
+    resize: vertical;
+    padding: 0.2rem 0.4rem;
+}
+#UI>button{
+    width: 14rem;
+    border-radius: 10px;
+    background-color: rgba(209, 199, 17, 0.682);
+    color: black;
+    font: caption;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* Saved Notes Here  */
+#Saved{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    height: auto;
+    border-radius: 8px;
+    padding: 0.5rem;
+    color: rgba(0, 0, 0, 0.408);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Notes */
+.Notes{
+    background-color: whitesmoke;
+    height: auto;
+    width: 12rem;
+    margin: 0.6rem auto;
+    border-radius: 7px;
+    /* overflow: hidden; */
+}
+.Deletation{
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    z-index: 13;
+    background-image: url(https://www.kindpng.com/picc/m/80-806376_cancel-delete-abort-remove-no-cross-arrow-button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Name{
+    background-color: rgb(177, 247, 131);
+    color: black;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1.15rem;
+    text-transform: capitalize;
+    border: 2px solid white;
+}
+.Content{
+    background-color: rgba(177, 247, 131, 0.203);
+    color: black;
+    text-align: center;
+    padding: 0.2rem;
+    text-align: start;
+    font-size: 0.96rem;
+    padding: 0.5rem;
+    border: 2px solid white;
+    display: flex;
+    word-break: break-all;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+/* Media Querries Here  */
+
+@media only screen and (max-width:834px){
+    #UI{
+        margin: 0;
+        width: 95%;
+        margin: auto;
+        margin-top: 0.8rem;
+
+    }
+    #Saved{
+        margin: 0;
+        width: 95%;
+        margin: auto;
+        margin-top: 0.8rem;
+
+    }
+}
